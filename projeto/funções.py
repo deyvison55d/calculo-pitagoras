@@ -3,6 +3,17 @@ from menu import linha
 
 #Funções para calcular os catetos e a hipotenusa de um triângulo retângulo
 def cateto_oposto():
+    """
+    Calcula o cateto oposto de um triângulo retângulo
+    com base na hipotenusa e no cateto adjacente.
+
+    Args:
+        hipotenusa (float): O valor da hipotenusa.
+        cateto_adjacente (float): O valor do cateto adjacente.
+    Returns:
+        float: O valor do cateto oposto.
+    """
+
     while True:
         try:
             # Solicita os valores da hipotenusa e do cateto adjacente
@@ -28,6 +39,18 @@ def cateto_oposto():
 
 
 def cateto_adjacente():
+    """
+    Calcula o cateto adjacente de um triângulo retângulo
+    com base na hipotenusa e no cateto oposto.
+    
+    Args:
+        hipotenusa (float): O valor da hipotenusa.
+        cateto_oposto (float): O valor do cateto oposto.
+
+    Returns:
+        float: O valor do cateto adjacente.
+    """
+
     while True:
         try:
             # Solicita os valores da hipotenusa e do cateto oposto
@@ -53,6 +76,18 @@ def cateto_adjacente():
 
 
 def hipotenusa():
+    """
+    Calcula a hipotenusa de um triângulo retângulo
+    com base no cateto oposto e no cateto adjacente.
+
+    Args:
+        cateto_oposto (float): O valor do cateto oposto.
+        cateto_adjacente (float): O valor do cateto adjacente.
+
+    Returns:
+        float: O valor da hipotenusa
+    """
+
     while True:
         try:
             # Solicita os valores do cateto oposto e do cateto adjacente

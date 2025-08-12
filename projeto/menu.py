@@ -1,14 +1,35 @@
 def linha ():
+    """
+    Exibe uma linha horizontal para separar seções do menu.
+    """
+
     print('-' * 40)
 
 
 def tabela(frase=''):
+    """
+    Exibe uma tabela com uma frase centralizada.
+
+    Args:
+        frase (str): A frase a ser exibida na tabela.
+    """
+
     linha()
     print(f'{frase:^40}')
     linha()
 
 
 def menu(frase):
+    """
+    Exibe o menu de opções para o usuário.
+
+    Args:
+        frase (str): A frase a ser exibida no topo do menu.
+
+    Returns:
+        int: A opção escolhida pelo usuário.
+    """
+
     tabela(f'\033[34m{frase}\033[m')
     print('\033[36m1\033[m - Calcular cateto oposto')
     print('\033[36m2\033[m - Calcular cateto adjacente')
