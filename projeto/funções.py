@@ -34,8 +34,8 @@ def cateto_oposto():
             linha()
 
     # Cálculo do cateto oposto      
-    num = math.sqrt(hipotenusa ** 2 - cateto_adjacente ** 2)
-    return num
+    resul = math.sqrt(hipotenusa ** 2 - cateto_adjacente ** 2)
+    return resul
 
 
 def cateto_adjacente():
@@ -71,8 +71,8 @@ def cateto_adjacente():
             linha()
     
     #Cálculo do cateto adjacente
-    num = math.sqrt(hipotenusa ** 2 - cateto_oposto ** 2)
-    return num
+    resul = math.sqrt(hipotenusa ** 2 - cateto_oposto ** 2)
+    return resul
 
 
 def hipotenusa():
