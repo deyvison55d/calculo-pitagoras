@@ -11,15 +11,15 @@ def cateto_oposto():
 
             # Verifica se os valores são válidos
             if hipotenusa <= 0 or cateto_adjacente <= 0:
-                print('\033[31mOs valores devem ser maiores que zero. Tente novamente.\033[m]')
+                print('\033[31mOs valores devem ser maiores que zero. Tente novamente.\033[m')
                 linha()
             elif hipotenusa < cateto_adjacente:
-                print('\033[31mA hipotenusa deve ser maior que o cateto adjacente. Tente novamente.\033[m]')
+                print('\033[31mA hipotenusa deve ser maior que o cateto adjacente. Tente novamente.\033[m')
                 linha()
             else:
                 break
         except ValueError:
-            print('\033[31mEntrada inválida! Por favor, insira um número válido.\033[m]')
+            print('\033[31mEntrada inválida! Por favor, insira um número válido.\033[m')
             linha()
 
     # Cálculo do cateto oposto      
@@ -36,15 +36,15 @@ def cateto_adjacente():
 
             # Verifica se os valores são válidos
             if hipotenusa <= 0 or cateto_oposto <= 0:
-                print('\033[31mOs valores devem ser maiores que zero. Tente novamente.\033[m]')
+                print('\033[31mOs valores devem ser maiores que zero. Tente novamente.\033[m')
                 linha()
             elif hipotenusa < cateto_oposto:
-                print('\033[mA hipotenusa deve ser maior que o cateto oposto. Tente novamente.\033[m]')
+                print('\033[31mA hipotenusa deve ser maior que o cateto oposto. Tente novamente.\033[m')
                 linha()
             else:
                 break
         except ValueError:
-            print('\033[mEntrada inválida! Por favor, insira um número válido.\033[m]')
+            print('\033[31mEntrada inválida! Por favor, insira um número válido.\033[m')
             linha()
     
     #Cálculo do cateto adjacente
@@ -61,12 +61,12 @@ def hipotenusa():
 
             # Verifica se os valores são válidos
             if cateto_oposto <= 0 or cateto_adjacente <= 0:
-                print('\033[31mOs valores devem ser maiores que zero. Tente novamente.\033[m]')
+                print('\033[31mOs valores devem ser maiores que zero. Tente novamente.\033[m')
                 linha()
             else:
                 break
         except ValueError:
-            print('\033[mEntrada inválida! Por favor, insira um número válido.\033[m]')
+            print('\033[mEntrada inválida! Por favor, insira um número válido.\033[m')
             linha()
 
     # Cálculo da hipotenusa

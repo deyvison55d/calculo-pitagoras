@@ -2,18 +2,18 @@ def linha ():
     print('-' * 40)
 
 
-def tabela():
+def tabela(frase=''):
     linha()
-    print(f'{'Calculo de Pitágoras':^40}')
+    print(f'{frase:^40}')
     linha()
 
 
-def menu():
-    tabela()
-    print('1 - Calcular cateto oposto')
-    print('2 - Calcular cateto adjacente')
-    print('3 - Calcular hipotenusa')
-    print('4 - Sair')
+def menu(frase):
+    tabela(f'\033[34m{frase}\033[m')
+    print('\033[36m1\033[m - Calcular cateto oposto')
+    print('\033[36m2\033[m - Calcular cateto adjacente')
+    print('\033[36m3\033[m - Calcular hipotenusa')
+    print('\033[36m4\033[m - Sair')
     linha()
     opcao = 0
     while opcao < 1 or opcao > 4:
