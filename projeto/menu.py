@@ -15,7 +15,8 @@ def tabela(frase=''):
     """
 
     linha()
-    print(f'{frase:^40}')
+    centrado = frase.center(40)
+    print(f'\033[34m{centrado}\033[m')
     linha()
 
 
@@ -30,7 +31,7 @@ def menu(frase):
         int: A opção escolhida pelo usuário.
     """
 
-    tabela(f'\033[34m{frase}\033[m')
+    tabela(frase)
     print('\033[36m1\033[m - Calcular cateto oposto')
     print('\033[36m2\033[m - Calcular cateto adjacente')
     print('\033[36m3\033[m - Calcular hipotenusa')
