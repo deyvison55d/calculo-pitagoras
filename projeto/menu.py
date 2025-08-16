@@ -32,10 +32,12 @@ def menu(frase):
     """
 
     tabela(frase)
-    print('\033[36m1\033[m - Calcular cateto oposto')
-    print('\033[36m2\033[m - Calcular cateto adjacente')
-    print('\033[36m3\033[m - Calcular hipotenusa')
-    print('\033[36m4\033[m - Sair')
+    print(f"""
+    \033[36m1\033[m - Calcular cateto oposto
+    \033[36m2\033[m - Calcular cateto adjacente
+    \033[36m3\033[m - Calcular hipotenusa
+    \033[36m4\033[m - Sair
+    """)
     linha()
     opcao = 0
     while opcao < 1 or opcao > 4:
